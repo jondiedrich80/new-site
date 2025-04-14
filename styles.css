@@ -1,9 +1,69 @@
-.fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s, transform 0.6s;
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #fff;
+  color: #1a1a1a;
 }
-.fade-in.visible {
-  opacity: 1;
-  transform: translateY(0);
+
+h1, h2, h3, h4 {
+  margin: 0;
+}
+
+header {
+  height: 80vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: white;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+button {
+  background-color: #2563eb;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 16px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}
+
+.room, .amenity {
+  background: white;
+  padding: 16px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+section {
+  padding: 60px 20px;
+}
+
+.rooms, .amenities {
+  display: grid;
+  gap: 24px;
+}
+
+@media(min-width: 768px) {
+  .rooms {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .amenities {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
