@@ -1,0 +1,9 @@
+<div class="portfolio-grid">
+  <div class="portfolio-item">
+    <img src="project1.jpg" alt="Project 1">
+    <div class="overlay">
+      <h3>Project 1</h3>
+    </div>
+  </div>
+  <!-- Repeat for other items -->
+</div>
